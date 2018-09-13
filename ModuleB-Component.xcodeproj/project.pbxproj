@@ -14,6 +14,9 @@
 		9C269822214AA350004DA3E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C269821214AA350004DA3E5 /* Assets.xcassets */; };
 		9C269825214AA350004DA3E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C269823214AA350004DA3E5 /* LaunchScreen.storyboard */; };
 		9C269828214AA350004DA3E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C269827214AA350004DA3E5 /* main.m */; };
+		9C269832214AA61C004DA3E5 /* ModuleBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C269831214AA61C004DA3E5 /* ModuleBViewController.m */; };
+		9C269835214AA6A6004DA3E5 /* Target_ModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C269834214AA6A6004DA3E5 /* Target_ModuleB.m */; };
+		9C269838214AA7CD004DA3E5 /* PageBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C269837214AA7CD004DA3E5 /* PageBViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,12 @@
 		9C269824214AA350004DA3E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C269826214AA350004DA3E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C269827214AA350004DA3E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C269830214AA61C004DA3E5 /* ModuleBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleBViewController.h; sourceTree = "<group>"; };
+		9C269831214AA61C004DA3E5 /* ModuleBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleBViewController.m; sourceTree = "<group>"; };
+		9C269833214AA6A6004DA3E5 /* Target_ModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_ModuleB.h; sourceTree = "<group>"; };
+		9C269834214AA6A6004DA3E5 /* Target_ModuleB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ModuleB.m; sourceTree = "<group>"; };
+		9C269836214AA7CD004DA3E5 /* PageBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageBViewController.h; sourceTree = "<group>"; };
+		9C269837214AA7CD004DA3E5 /* PageBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageBViewController.m; sourceTree = "<group>"; };
 		A21713D3F7C19BC01BCAD16C /* libPods-ModuleB-Component.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModuleB-Component.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1224F554D547B42581AFD15 /* Pods-ModuleB-Component.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleB-Component.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleB-Component/Pods-ModuleB-Component.debug.xcconfig"; sourceTree = "<group>"; };
 		F791AE5D3942C5ABCF524465 /* Pods-ModuleB-Component.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleB-Component.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleB-Component/Pods-ModuleB-Component.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +91,8 @@
 		9C269817214AA34F004DA3E5 /* ModuleB-Component */ = {
 			isa = PBXGroup;
 			children = (
+				9C26982F214AA5D3004DA3E5 /* Controller */,
+				9C26982E214AA5D3004DA3E5 /* Target */,
 				9C269818214AA34F004DA3E5 /* AppDelegate.h */,
 				9C269819214AA34F004DA3E5 /* AppDelegate.m */,
 				9C26981B214AA34F004DA3E5 /* ViewController.h */,
@@ -93,6 +104,26 @@
 				9C269827214AA350004DA3E5 /* main.m */,
 			);
 			path = "ModuleB-Component";
+			sourceTree = "<group>";
+		};
+		9C26982E214AA5D3004DA3E5 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				9C269833214AA6A6004DA3E5 /* Target_ModuleB.h */,
+				9C269834214AA6A6004DA3E5 /* Target_ModuleB.m */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		9C26982F214AA5D3004DA3E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C269830214AA61C004DA3E5 /* ModuleBViewController.h */,
+				9C269831214AA61C004DA3E5 /* ModuleBViewController.m */,
+				9C269836214AA7CD004DA3E5 /* PageBViewController.h */,
+				9C269837214AA7CD004DA3E5 /* PageBViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C269838214AA7CD004DA3E5 /* PageBViewController.m in Sources */,
 				9C26981D214AA34F004DA3E5 /* ViewController.m in Sources */,
+				9C269832214AA61C004DA3E5 /* ModuleBViewController.m in Sources */,
 				9C269828214AA350004DA3E5 /* main.m in Sources */,
+				9C269835214AA6A6004DA3E5 /* Target_ModuleB.m in Sources */,
 				9C26981A214AA34F004DA3E5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
