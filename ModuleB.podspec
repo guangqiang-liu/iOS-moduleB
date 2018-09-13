@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
     
   s.subspec 'Target' do |ss|
       ss.source_files = "ModuleB-Component/Target/**/*.{h,m}"
-      ss.dependency "ModuleB-Component/Controller"
+      ss.dependency "ModuleB/Controller"
   end
 
 end
